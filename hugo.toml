@@ -10,7 +10,7 @@ theme = 'archie'
 	mode="dark" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "Personal blog of Yosif Qassim"
-	mathjax = true # enable MathJax support
+	mathjax = false # disabled - using KaTeX instead
 	katex = true # enable KaTeX support
 
 # Social Tags
