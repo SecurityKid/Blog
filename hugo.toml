@@ -1,0 +1,45 @@
+baseURL = 'https://yosif-qasim.github.io/'
+languageCode = 'en-us'
+title = 'Koshary for the win!'
+theme = 'archie'
+
+[markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+	mode="dark" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Personal blog of Yosif Qassim"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/yosif-qasim"
+
+
+[[params.social]]
+name = "Linkedin"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/yosif-qassim/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+

@@ -5,6 +5,17 @@ draft = false
 +++
 
 this is a test ! 
+<style>
+  body {
+    margin: 0; /* Remove default body margin */
+  }
+  iframe {
+    width: 100%;
+    height: 100vh; /* 100% of viewport height */
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    border: none; /* Remove default border */
+  }
+</style>
 
-<iframe src="https://marwan-store.vercel.app/" title="W3Schools Free Online Web Tutorials">
-</iframe>
+<iframe src="https://koshary-code.vercel.app/" title="koshary-code"></iframe>
