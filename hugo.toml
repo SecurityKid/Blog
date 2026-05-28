@@ -1,45 +1,69 @@
 baseURL = 'https://securitykid.github.io/Blog/'
 languageCode = 'en-us'
 title = 'Koshary for the win!'
-theme = 'archie'
+theme = 'hugo-theme-stack'
 
-[markup.goldmark.renderer]
+# Number of posts per page
+[pagination]
+  pagerSize = 5
+
+# Code highlighting
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
       unsafe = true
 
 [params]
-	mode="dark" # color-mode → light,dark,toggle or auto
-	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Personal blog of Yosif Qassim"
-	mathjax = false # disabled - using KaTeX instead
-	katex = true # enable KaTeX support
+  mainSections = ["posts"]
+  description = "Personal blog of Yosif Qassim"
+  rssFullContent = true
 
-# Social Tags
+  [params.sidebar]
+    emoji = "🎯"
+    subtitle = "Personal blog of Yosif Qassim"
 
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/yosif-qasim"
+  [params.footer]
+    since = 2025
 
+  [params.article]
+    math = false
+    toc = true
+    readingTime = true
 
-[[params.social]]
-name = "Linkedin"
-icon = "linkedin"
-url = "https://www.linkedin.com/in/yosif-qassim/"
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
 
-# Main menu Items
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
 
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
 
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
 
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/SecurityKid"
+    weight = 4
 
+[social]
+  [social.github]
+    identifier = "SecurityKid"
+
+  [social.linkedin]
+    identifier = "yosif-qassim"

@@ -18,7 +18,8 @@ index :
     - Designing an Enhanced Memory System
 - Other research on Long-Term Memory
 
-{{< callout type="custom" title="Note" emoji="💡" text="This article is about my journey learning about the different ways LLMs are equipped with long & short-term memory. Don't expect any breakthroughs—I'm just exploring the surface." style="background-color: transparent; border: 3px solid rgb(64, 224, 120);" >}}
+> [!tip] Note
+> This article is about my journey learning about the different ways LLMs are equipped with long & short-term memory. Don't expect any breakthroughs—I'm just exploring the surface.
 
 
 
@@ -576,10 +577,5 @@ i need further research :
 - How to beat the Context length limitations
 - How models remember things in the first place ? i need to cut one open to figure out how its vector memory work
 
-<aside>
-{{< callout type="custom" title="Note" emoji="💡" text="yes, this article was improved using LLM’s but it was only used for fixing grammer and typos, nothing major ;) " style="background-color: transparent; border: 3px solid rgb(202, 209, 204);" >}}
-
-
-
-
-</aside>
+> [!tip] Note
+> yes, this article was improved using LLM’s but it was only used for fixing grammer and typos, nothing major ;)
