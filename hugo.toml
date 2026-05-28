@@ -31,7 +31,7 @@ hasCJKLanguage = false
   [params.sidebar]
     emoji = "🧉"
     subtitle = "Personal blog of Yosif Qassim"
-    avatar = "img/avatar.png"
+    avatar = "/img/avatar.png"
 
   [params.footer]
     since = 2025
