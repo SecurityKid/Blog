@@ -1,45 +1,106 @@
 baseURL = 'https://securitykid.github.io/Blog/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Koshary for the win!'
-theme = 'archie'
+theme = 'hugo-theme-stack'
 
-[markup.goldmark.renderer]
+defaultContentLanguage = 'en'
+hasCJKLanguage = false
+
+# Pagination
+[pagination]
+  pagerSize = 5
+
+# Permalinks
+[permalinks]
+  post = "/posts/:slug/"
+  page = "/:slug/"
+
+# Code highlighting
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
       unsafe = true
 
 [params]
-	mode="dark" # color-mode → light,dark,toggle or auto
-	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Personal blog of Yosif Qassim"
-	mathjax = false # disabled - using KaTeX instead
-	katex = true # enable KaTeX support
+  mainSections = ["posts"]
+  description = "Personal blog of Yosif Qassim"
+  rssFullContent = true
 
-# Social Tags
+  [params.sidebar]
+    emoji = "🎯"
+    subtitle = "Personal blog of Yosif Qassim"
+    avatar = "img/avatar.png"
 
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/yosif-qasim"
+  [params.footer]
+    since = 2025
 
+  [params.article]
+    math = false
+    toc = true
+    readingTime = true
+    [params.article.list]
+      showTags = true
 
-[[params.social]]
-name = "Linkedin"
-icon = "linkedin"
-url = "https://www.linkedin.com/in/yosif-qassim/"
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
 
-# Main menu Items
+  [params.widgets]
+    homepage = [
+      { type = "search" },
+      { type = "archives", params = { limit = 5 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page = [
+      { type = "toc" }
+    ]
+
+# Social
+[[menu.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/SecurityKid"
+  weight = 1
+
+  [menu.social.params]
+    icon = "brand-github"
+
+[[menu.social]]
+  identifier = "linkedin"
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/yosif-qassim/"
+  weight = 2
+
+  [menu.social.params]
+    icon = "user"
+
+# Menu
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [menu.main.params]
+    icon = "home"
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+  [menu.main.params]
+    icon = "archives"
 
 [[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 4
 
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
+  [menu.main.params]
+    icon = "user"
