@@ -1,6 +1,6 @@
 baseURL = 'https://securitykid.com'
 locale = 'en-us'
-title = 'Koshary for the win!'
+title = 'Security Kid Blog'
 theme = 'hugo-theme-stack'
 
 defaultContentLanguage = 'en'

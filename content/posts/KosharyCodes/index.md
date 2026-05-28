@@ -9,7 +9,8 @@ categories:
   - Projects
 ---
 
-this is a test !
+created a small vercel app to train on secure code review, check it out !
+
 <style>
   body {
     margin: 0; /* Remove default body margin */
