@@ -1,11 +1,19 @@
 baseURL = 'https://securitykid.github.io/Blog/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Koshary for the win!'
 theme = 'hugo-theme-stack'
 
-# Number of posts per page
+defaultContentLanguage = 'en'
+hasCJKLanguage = false
+
+# Pagination
 [pagination]
   pagerSize = 5
+
+# Permalinks
+[permalinks]
+  post = "/posts/:slug/"
+  page = "/:slug/"
 
 # Code highlighting
 [markup]
@@ -23,6 +31,7 @@ theme = 'hugo-theme-stack'
   [params.sidebar]
     emoji = "🎯"
     subtitle = "Personal blog of Yosif Qassim"
+    avatar = "img/avatar.png"
 
   [params.footer]
     since = 2025
@@ -31,39 +40,67 @@ theme = 'hugo-theme-stack'
     math = false
     toc = true
     readingTime = true
+    [params.article.list]
+      showTags = true
 
   [params.colorScheme]
     toggle = true
     default = "auto"
 
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
+  [params.widgets]
+    homepage = [
+      { type = "search" },
+      { type = "archives", params = { limit = 5 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page = [
+      { type = "toc" }
+    ]
 
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 2
+# Social
+[[menu.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/SecurityKid"
+  weight = 1
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 3
+  [menu.social.params]
+    icon = "brand-github"
 
-  [[menu.main]]
-    identifier = "github"
-    name = "GitHub"
-    url = "https://github.com/SecurityKid"
-    weight = 4
+[[menu.social]]
+  identifier = "linkedin"
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/yosif-qassim/"
+  weight = 2
 
-[social]
-  [social.github]
-    identifier = "SecurityKid"
+  [menu.social.params]
+    icon = "user"
 
-  [social.linkedin]
-    identifier = "yosif-qassim"
+# Menu
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [menu.main.params]
+    icon = "home"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+  [menu.main.params]
+    icon = "archives"
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+  [menu.main.params]
+    icon = "user"
