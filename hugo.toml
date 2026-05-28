@@ -1,4 +1,4 @@
-baseURL = 'https://securitykid.github.io/Blog/'
+baseURL = 'https://securitykid.com'
 locale = 'en-us'
 title = 'Koshary for the win!'
 theme = 'hugo-theme-stack'
