@@ -29,7 +29,7 @@ hasCJKLanguage = false
   rssFullContent = true
 
   [params.sidebar]
-    emoji = "🎯"
+    emoji = "🧉"
     subtitle = "Personal blog of Yosif Qassim"
     avatar = "img/avatar.png"
 
