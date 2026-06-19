@@ -1,5 +1,5 @@
 ---
-title: "TIL: How to Fingerprint an LLM Using Its Knowledge Cutoff Date"
+title: "How to Fingerprint an LLM Using Its Knowledge Cutoff Date"
 date: 2026-06-19T00:00:00+02:00
 draft: false
 tags:
