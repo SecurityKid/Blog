@@ -12,7 +12,6 @@ categories:
   - TIL
 ---
 
-# TIL: How to Fingerprint an LLM Using Its Knowledge Cutoff Date
 
 While doing bug bounty recon on a target with AI features, I noticed the model felt noticeably less capable than what I'm used to. I wanted to identify which model family it belonged to, knowing that would let me research known jailbreaks and weaknesses specific to it.
 
