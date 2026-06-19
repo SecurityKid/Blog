@@ -34,7 +34,7 @@ The answer pointed to a cutoff somewhere around October 2023.
 
 To get more precise, I followed up with:
 
-> What was an interesting event that happened on this exact date in history?
+> What was an interesting event that happened at the same date as today ?
 
 ![Model referencing events from October 4th 2023](image-3.png)
 
