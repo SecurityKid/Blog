@@ -2,6 +2,7 @@
 title: "Finding the Hiding Ox: Unveiling a Stealth Model"
 date: 2026-08-21T21:30:00+00:00
 draft: false
+image: 'cover.jpg'
 tags:
   - llm
   - ai security
@@ -15,8 +16,7 @@ categories:
 
 ## Prologue: a very generous stealth model
 
-Less than 24 hours ago opencode announced a new free stealth model named Ox Alpha with very very generous limits, practically unlimited.
-https://x.com/opencode/status/2090544355824038300
+Less than 24 hours ago [opencode announced](https://x.com/opencode/status/2090544355824038300) a new free stealth model named Ox Alpha with very very generous limits, practically unlimited.
 
 This isn't the first time this happens, but the timing and the model's capabilities make this one more interesting than usual.
 The model dropped just after the DeepSeek v4 flash free promotion got pulled from opencode, and a couple of days after DeepSeek raised pricing on that same model, leaving huge demand for a cheap capable replacement.
@@ -184,9 +184,9 @@ A stack trace fragment with three confessions:
 Quick backend explainer: servers don't treat your JSON as a blob. They *deserialize* it into predefined objects with declared types. In the Java world that job belongs to the **Jackson** library inside the **Spring** framework.
 
 Quickly googling `com.wd.paas.api.domain.v4.chat.ChatCompletionRequest` gets us three GitHub issues, all pointing at the GLM family:
-* https://github.com/r1n7aro/Locus/issues/106
-* https://github.com/modelscope/modelscope/issues/1430
-* https://github.com/agentuniverse-ai/agentUniverse/issues/272
+* [r1n7aro/Locus#106](https://github.com/r1n7aro/Locus/issues/106)
+* [modelscope/modelscope#1430](https://github.com/modelscope/modelscope/issues/1430)
+* [agentuniverse-ai/agentUniverse#272](https://github.com/agentuniverse-ai/agentUniverse/issues/272)
 
 Looking at Zhipu AI's official GLM endpoint:
 ```
