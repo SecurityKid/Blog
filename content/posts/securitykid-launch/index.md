@@ -5,11 +5,11 @@ draft: false
 description: "I wanted to practice secure code review, but most training uses toy examples. So I built SecurityKid: real GitHub advisories, stripped of their identity, reviewed before the fix."
 image: 'Thumbnail.jpg'
 tags:
-  - securitykid
+  - SecurityKid
   - project
   - security
   - code review
-  - appsec
+  - AppSec
   - launch
 categories:
   - Projects
